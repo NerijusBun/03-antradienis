@@ -7,13 +7,13 @@
     <title>UFO</title>
 </head>
 <body style="background-color: white;">
-    <main style="background-color: red; width: 50%; margin-left: 25%; margin-top: 10%;">
-        <div>
+    <main style="display: inline-block; width: 50%; margin-left: 25%; margin-top: 10%;">
+        <div style="float: left; background-color: yellow; width: 30%; margin-right: 10%; margin-top: 50px;">
             <h1 style="font-size: 70px; color: blue;">404</h1>
-            <p style="font-size: 30px; color: black; text-transform: uppercase;">Page not found</p>
+            <p style="font-size: 30px; color: black; text-transform: uppercase; font-weight: bold;">Page not found</p>
             <a href="">Go to home</a>
         </div>
-        <img src="./ufo.jpg" alt="UFO lekste">
+        <img style="width: 60%; float: left;"src="./ufo.jpg" alt="UFO lekste">
     </main>
 </body>
 </html>
@@ -40,7 +40,10 @@
     margin-top: 10%           atsistumimas nuo virsaus
     margin-right: 10%         atsistumimas is desines
     margin-bottom: 10%        atsistumimas nuo apacios
-    margin-left: 10%          atsistumimas is kaires  
+    margin-left: 10%          atsistumimas is kaires 
+    
+    KRASTINES:
+    border:1px solid (spalva)               uzdeda krastine ant elemento
 
     TEKSTAI:
     font-size: 40px;
@@ -48,6 +51,17 @@
     font-weight: bold;
     color: red;               teksto spalva
     text-transform: uppercase;       Teksto didinimas-mazinimas
+
+    ELEMENTU ATVAIZDAVIMO BUDAS:
+    display: block;                 default - is virsaus i apacia
+    display: inline;                zodziai tekste(didziulis tekstas,kai netelpa zodziai krenta i nauja eilute)
+    nuorodos                       display: inline visada buna
+    tekstai                         display block buna dazniausiai
+    display: inline-block;          elementas platus tiek kiek ja,e yra turinio, bet ne platesni nei tevas
+
+    PRIVERSTINIS ELEMENTU SUSTUMIMAS
+    float: left;                prie artimiausio krasto
+    float: right;
 
 
 
